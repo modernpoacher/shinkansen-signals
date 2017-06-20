@@ -1,14 +1,16 @@
 {
-  "name": "react-boiler",
+  "name": "locomotive-boiler",
   "version": "0.0.1",
-  "description": "React Boiler",
+  "description": "Locomotive Boiler",
   "main": "./index.js",
   "keywords": [
-    "React"
+    "Locomotive",
+    "Boiler",
+    "Zashiki Karakuri"
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com/modernpoacher/React.Boiler.git"
+    "url": "git@github.com/modernpoacher/Locomotive.Boiler.git"
   },
   "author": "Jonathan Perry for Modern Poacher",
   "license": "MIT",
