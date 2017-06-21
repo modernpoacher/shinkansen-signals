@@ -1,16 +1,16 @@
 {
-  "name": "locomotive-boiler",
-  "version": "0.0.2",
-  "description": "Locomotive Boiler",
+  "name": "shinkansen-boiler",
+  "version": "0.0.1",
+  "description": "Shinkansen Boiler",
   "main": "./index.js",
   "keywords": [
-    "Locomotive",
+    "Shinkansen",
     "Boiler",
     "Zashiki Karakuri"
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com/modernpoacher/Locomotive.Boiler.git"
+    "url": "git@github.com/modernpoacher/Shinkansen.Boiler.git"
   },
   "author": "Jonathan Perry for Modern Poacher",
   "license": "MIT",
