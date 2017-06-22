@@ -1,4 +1,4 @@
-export const BOILER = {
+export const SIGNALS = {
   ALPHA: 'alpha',
   OMEGA: 'omega',
 
@@ -52,12 +52,12 @@ export const BOILER = {
   COMPLETE: 5,
   PENDING: 6
 }
-export const boiler = new Map()
+export const signals = new Map()
 
 Reflect
-  .ownKeys(BOILER)
+  .ownKeys(SIGNALS)
   .forEach((key) => {
-    boiler.set(key,
-      Reflect.get(BOILER, key)
+    signals.set(key,
+      Reflect.get(SIGNALS, key)
     )
   })
