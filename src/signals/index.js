@@ -148,7 +148,7 @@ export class Signals {
     return signals.get('PENDING')
   }
 
-  static stoke (values) {
+  static raise (values) {
     Reflect
       .ownKeys(values)
       .forEach((key) => {
