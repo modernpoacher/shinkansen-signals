@@ -3,7 +3,7 @@ import {
   signals
 } from './signals'
 
-export class Signals {
+export default class Signals {
   static get ALPHA () {
     return signals.get('ALPHA')
   }
@@ -153,7 +153,9 @@ export class Signals {
       .ownKeys(values)
       .forEach((key) => {
         if (Reflect.has(SIGNALS, key)) {
-          signals.set(key, Reflect.get(values, key))
+          const value = Reflect.get(values, key)
+
+          signals.set(key, value)
         }
       })
   }

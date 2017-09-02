@@ -1,3 +1,1 @@
-export {
-  Signals
-} from './signals'
+export Signals from './signals'

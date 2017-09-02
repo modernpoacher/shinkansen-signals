@@ -52,12 +52,13 @@ export const SIGNALS = {
   COMPLETE: 5,
   PENDING: 6
 }
+
 export const signals = new Map()
 
 Reflect
   .ownKeys(SIGNALS)
   .forEach((key) => {
-    signals.set(key,
-      Reflect.get(SIGNALS, key)
-    )
+    const value = Reflect.get(SIGNALS, key)
+
+    signals.set(key, value)
   })
