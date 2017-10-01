@@ -1,4 +1,4 @@
-export const SIGNALS = {
+const SIGNALS = {
   ALPHA: 'alpha',
   OMEGA: 'omega',
 
@@ -53,12 +53,4 @@ export const SIGNALS = {
   PENDING: 6
 }
 
-export const signals = new Map()
-
-Reflect
-  .ownKeys(SIGNALS)
-  .forEach((key) => {
-    const value = Reflect.get(SIGNALS, key)
-
-    signals.set(key, value)
-  })
+export const signals = new Map(Object.entries(SIGNALS))

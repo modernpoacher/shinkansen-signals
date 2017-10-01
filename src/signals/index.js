@@ -1,5 +1,4 @@
 import {
-  SIGNALS,
   signals
 } from './signals'
 
@@ -152,7 +151,7 @@ export default class Signals {
     Reflect
       .ownKeys(values)
       .forEach((key) => {
-        if (Reflect.has(SIGNALS, key)) {
+        if (signals.has(key)) {
           const value = Reflect.get(values, key)
 
           signals.set(key, value)
