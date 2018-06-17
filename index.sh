@@ -2,17 +2,16 @@
 
 PASS="\x1B[0;32m\x20\x20✔\x1B[0m" # GREEN
 FAIL="\x1B[0;31m\x20\x20✕\x1B[0m" # RED
-MODULE="\x1B[0;90m(shinkansen-signals)\x1B[0m" # GREY
+MODULE="\x1B[0;90mshinkansen-signals\x1B[0m" # GREY
 
 if [[ $? -eq 0 ]]; then
 
-  cd ../shinkansen-signals
-  rm -rf lib
-  npm install
+  # cd ../shinkansen-signals
+  npm run clean &> /dev/null
+  npm install &> /dev/null
 
-  echo -e "\x15" # CR
+  # echo -e "\x15" # CR
   echo -e $PASS $MODULE
-
   echo -e "\x15" # CR
 
   npm link
