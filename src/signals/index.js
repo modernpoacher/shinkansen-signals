@@ -1,6 +1,4 @@
-import {
-  signals
-} from './signals'
+import signals from './signals'
 
 export default class Signals {
   static get ALPHA () {
@@ -147,7 +145,7 @@ export default class Signals {
     return signals.get('PENDING')
   }
 
-  static raise (values) {
+  static raise (values = {}) {
     Reflect
       .ownKeys(values)
       .forEach((key) => {

@@ -1,4 +1,4 @@
-const SIGNALS = {
+export default new Map(Object.entries({
   ALPHA: 'alpha',
   OMEGA: 'omega',
 
@@ -18,6 +18,26 @@ const SIGNALS = {
 
   CHANGE_OMEGA: 'CHANGE_OMEGA',
   REMAIN_OMEGA: 'REMAIN_OMEGA',
+
+  /**
+   *  ALPHA_STAGE: 'alpha-stage',
+   *  OMEGA_STAGE: 'omega-stage',
+   *
+   *  ALPHA_PATTERN: ':alpha',
+   *  OMEGA_PATTERN: ':omega',
+   *
+   *  ALPHA_ROUTE: '/:alpha',
+   *  OMEGA_ROUTE: '/:alpha/:omega',
+   *
+   *  EMBARK_STAGE: 'embark-stage',
+   *  DEBARK_STAGE: 'debark-stage',
+   *
+   *  EMBARK_PATTERN: ':embark',
+   *  DEBARK_PATTERN: ':debark',
+   *
+   *  EMBARK_ROUTE: '/:embark',
+   *  DEBARK_ROUTE: '/:debark',
+   */
 
   ALPHA_PATTERN: '/:alpha',
   OMEGA_PATTERN: '/:alpha/:omega',
@@ -51,6 +71,4 @@ const SIGNALS = {
   NO_DECISION: 4,
   COMPLETE: 5,
   PENDING: 6
-}
-
-export const signals = new Map(Object.entries(SIGNALS))
+}))
