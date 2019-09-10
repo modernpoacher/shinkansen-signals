@@ -16,6 +16,13 @@ module.exports = {
     ]
   ],
   plugins: [
-    '@babel/proposal-export-default-from'
+    '@babel/proposal-export-default-from',
+    [
+      'module-resolver', {
+        alias: {
+          'shinkansen-signals': './src'
+        }
+      }
+    ]
   ]
 }
