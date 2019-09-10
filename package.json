@@ -23,7 +23,7 @@
     "clean": "rimraf lib",
     "babel": "babel src -d lib",
     "babel:watch": "npm run babel -- -w",
-    "lint": "eslint src *.js",
+    "lint": "eslint src test *.js",
     "lint:fix": "npm run lint -- --fix",
     "test": "mocha -r @babel/register test/**/*.spec.js",
     "pre-commit": "npm run lint && npm test && npm run babel && git add lib",
@@ -51,9 +51,7 @@
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^3.0.5",
     "mocha": "^6.2.0",
-    "rimraf": "^3.0.0",
-    "sinon": "^7.4.2",
-    "sinon-chai": "^3.3.0"
+    "rimraf": "^3.0.0"
   },
   "husky": {
     "hooks": {
