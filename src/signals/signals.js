@@ -5,6 +5,8 @@ export default new Map(Object.entries({
   EMBARK: 'embark',
   DEBARK: 'debark',
 
+  CONFIRMATION: 'confirmation',
+
   INDEX: 'INDEX',
 
   ENTER_ALPHA: 'ENTER_ALPHA',
@@ -45,8 +47,12 @@ export default new Map(Object.entries({
   EMBARK_STAGE: 'embark-stage',
   DEBARK_STAGE: 'debark-stage',
 
+  CONFIRMATION_STAGE: 'confirmation-stage',
+
   EMBARK_PATTERN: '/:embark',
   DEBARK_PATTERN: '/:debark',
+
+  CONFIRMATION_PATTERN: '/:confirmation',
 
   ENTER_ALPHA_ENTER_OMEGA: 'ENTER_ALPHA_ENTER_OMEGA',
   LEAVE_ALPHA_LEAVE_OMEGA: 'LEAVE_ALPHA_LEAVE_OMEGA',

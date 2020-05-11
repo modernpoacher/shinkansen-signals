@@ -56,6 +56,18 @@ describe('shinkansen-signals/signals', () => {
     })
   })
 
+  describe('`Signals.CONFIRMATION`', () => {
+    it('is a string', () => {
+      expect(Signals.CONFIRMATION)
+        .to.be.a('string')
+    })
+
+    it('is `confirmation`', () => {
+      expect(Signals.CONFIRMATION)
+        .to.equal('confirmation')
+    })
+  })
+
   describe('`Signals.INDEX`', () => {
     it('is a string', () => {
       expect(Signals.INDEX)
@@ -212,6 +224,18 @@ describe('shinkansen-signals/signals', () => {
     })
   })
 
+  describe('`Signals.CONFIRMATION_STAGE`', () => {
+    it('is a string', () => {
+      expect(Signals.CONFIRMATION_STAGE)
+        .to.be.a('string')
+    })
+
+    it('is `confirmation-stage`', () => {
+      expect(Signals.CONFIRMATION_STAGE)
+        .to.equal('confirmation-stage')
+    })
+  })
+
   describe('`Signals.EMBARK_PATTERN`', () => {
     it('is a string', () => {
       expect(Signals.EMBARK_PATTERN)
@@ -233,6 +257,18 @@ describe('shinkansen-signals/signals', () => {
     it('is `/:debark`', () => {
       expect(Signals.DEBARK_PATTERN)
         .to.equal('/:debark')
+    })
+  })
+
+  describe('`Signals.CONFIRMATION_PATTERN`', () => {
+    it('is a string', () => {
+      expect(Signals.CONFIRMATION_PATTERN)
+        .to.be.a('string')
+    })
+
+    it('is `/:confirmation`', () => {
+      expect(Signals.CONFIRMATION_PATTERN)
+        .to.equal('/:confirmation')
     })
   })
 

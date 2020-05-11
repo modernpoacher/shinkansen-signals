@@ -17,6 +17,10 @@ export default class Signals {
     return signals.get('DEBARK')
   }
 
+  static get CONFIRMATION () {
+    return signals.get('CONFIRMATION')
+  }
+
   static get INDEX () {
     return signals.get('INDEX')
   }
@@ -69,12 +73,20 @@ export default class Signals {
     return signals.get('DEBARK_STAGE')
   }
 
+  static get CONFIRMATION_STAGE () {
+    return signals.get('CONFIRMATION_STAGE')
+  }
+
   static get EMBARK_PATTERN () {
     return signals.get('EMBARK_PATTERN')
   }
 
   static get DEBARK_PATTERN () {
     return signals.get('DEBARK_PATTERN')
+  }
+
+  static get CONFIRMATION_PATTERN () {
+    return signals.get('CONFIRMATION_PATTERN')
   }
 
   static get ENTER_ALPHA_ENTER_OMEGA () {
