@@ -17,12 +17,44 @@ export default class Signals {
     return signals.get('DEBARK')
   }
 
-  static get CONFIRMATION () {
-    return signals.get('CONFIRMATION')
+  static get CONFIRM () {
+    return signals.get('CONFIRM')
   }
 
   static get INDEX () {
     return signals.get('INDEX')
+  }
+
+  static get ALPHA_PATTERN () {
+    return signals.get('ALPHA_PATTERN')
+  }
+
+  static get OMEGA_PATTERN () {
+    return signals.get('OMEGA_PATTERN')
+  }
+
+  static get EMBARK_STAGE () {
+    return signals.get('EMBARK_STAGE')
+  }
+
+  static get DEBARK_STAGE () {
+    return signals.get('DEBARK_STAGE')
+  }
+
+  static get CONFIRM_STAGE () {
+    return signals.get('CONFIRM_STAGE')
+  }
+
+  static get EMBARK_PATTERN () {
+    return signals.get('EMBARK_PATTERN')
+  }
+
+  static get DEBARK_PATTERN () {
+    return signals.get('DEBARK_PATTERN')
+  }
+
+  static get CONFIRM_PATTERN () {
+    return signals.get('CONFIRM_PATTERN')
   }
 
   static get ENTER_ALPHA () {
@@ -55,38 +87,6 @@ export default class Signals {
 
   static get REMAIN_OMEGA () {
     return signals.get('REMAIN_OMEGA')
-  }
-
-  static get ALPHA_PATTERN () {
-    return signals.get('ALPHA_PATTERN')
-  }
-
-  static get OMEGA_PATTERN () {
-    return signals.get('OMEGA_PATTERN')
-  }
-
-  static get EMBARK_STAGE () {
-    return signals.get('EMBARK_STAGE')
-  }
-
-  static get DEBARK_STAGE () {
-    return signals.get('DEBARK_STAGE')
-  }
-
-  static get CONFIRMATION_STAGE () {
-    return signals.get('CONFIRMATION_STAGE')
-  }
-
-  static get EMBARK_PATTERN () {
-    return signals.get('EMBARK_PATTERN')
-  }
-
-  static get DEBARK_PATTERN () {
-    return signals.get('DEBARK_PATTERN')
-  }
-
-  static get CONFIRMATION_PATTERN () {
-    return signals.get('CONFIRMATION_PATTERN')
   }
 
   static get ENTER_ALPHA_ENTER_OMEGA () {

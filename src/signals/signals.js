@@ -5,21 +5,9 @@ export default new Map(Object.entries({
   EMBARK: 'embark',
   DEBARK: 'debark',
 
-  CONFIRMATION: 'confirmation',
+  CONFIRM: 'confirm',
 
   INDEX: 'INDEX',
-
-  ENTER_ALPHA: 'ENTER_ALPHA',
-  LEAVE_ALPHA: 'LEAVE_ALPHA',
-
-  CHANGE_ALPHA: 'CHANGE_ALPHA',
-  REMAIN_ALPHA: 'REMAIN_ALPHA',
-
-  ENTER_OMEGA: 'ENTER_OMEGA',
-  LEAVE_OMEGA: 'LEAVE_OMEGA',
-
-  CHANGE_OMEGA: 'CHANGE_OMEGA',
-  REMAIN_OMEGA: 'REMAIN_OMEGA',
 
   /**
    *  ALPHA_STAGE: 'alpha-stage',
@@ -47,12 +35,24 @@ export default new Map(Object.entries({
   EMBARK_STAGE: 'embark-stage',
   DEBARK_STAGE: 'debark-stage',
 
-  CONFIRMATION_STAGE: 'confirmation-stage',
+  CONFIRM_STAGE: 'confirm-stage',
 
   EMBARK_PATTERN: '/:embark',
   DEBARK_PATTERN: '/:debark',
 
-  CONFIRMATION_PATTERN: '/:confirmation',
+  CONFIRM_PATTERN: '/:confirm',
+
+  ENTER_ALPHA: 'ENTER_ALPHA',
+  LEAVE_ALPHA: 'LEAVE_ALPHA',
+
+  CHANGE_ALPHA: 'CHANGE_ALPHA',
+  REMAIN_ALPHA: 'REMAIN_ALPHA',
+
+  ENTER_OMEGA: 'ENTER_OMEGA',
+  LEAVE_OMEGA: 'LEAVE_OMEGA',
+
+  CHANGE_OMEGA: 'CHANGE_OMEGA',
+  REMAIN_OMEGA: 'REMAIN_OMEGA',
 
   ENTER_ALPHA_ENTER_OMEGA: 'ENTER_ALPHA_ENTER_OMEGA',
   LEAVE_ALPHA_LEAVE_OMEGA: 'LEAVE_ALPHA_LEAVE_OMEGA',

@@ -56,15 +56,15 @@ describe('shinkansen-signals/signals', () => {
     })
   })
 
-  describe('`Signals.CONFIRMATION`', () => {
+  describe('`Signals.CONFIRM`', () => {
     it('is a string', () => {
-      expect(Signals.CONFIRMATION)
+      expect(Signals.CONFIRM)
         .to.be.a('string')
     })
 
-    it('is `confirmation`', () => {
-      expect(Signals.CONFIRMATION)
-        .to.equal('confirmation')
+    it('is `confirm`', () => {
+      expect(Signals.CONFIRM)
+        .to.equal('confirm')
     })
   })
 
@@ -77,6 +77,102 @@ describe('shinkansen-signals/signals', () => {
     it('is `INDEX`', () => {
       expect(Signals.INDEX)
         .to.equal('INDEX')
+    })
+  })
+
+  describe('`Signals.ALPHA_PATTERN`', () => {
+    it('is a string', () => {
+      expect(Signals.ALPHA_PATTERN)
+        .to.be.a('string')
+    })
+
+    it('is `/:alpha`', () => {
+      expect(Signals.ALPHA_PATTERN)
+        .to.equal('/:alpha')
+    })
+  })
+
+  describe('`Signals.OMEGA_PATTERN`', () => {
+    it('is a string', () => {
+      expect(Signals.OMEGA_PATTERN)
+        .to.be.a('string')
+    })
+
+    it('is `/:alpha/:omega`', () => {
+      expect(Signals.OMEGA_PATTERN)
+        .to.equal('/:alpha/:omega')
+    })
+  })
+
+  describe('`Signals.EMBARK_STAGE`', () => {
+    it('is a string', () => {
+      expect(Signals.EMBARK_STAGE)
+        .to.be.a('string')
+    })
+
+    it('is `embark-stage`', () => {
+      expect(Signals.EMBARK_STAGE)
+        .to.equal('embark-stage')
+    })
+  })
+
+  describe('`Signals.DEBARK_STAGE`', () => {
+    it('is a string', () => {
+      expect(Signals.DEBARK_STAGE)
+        .to.be.a('string')
+    })
+
+    it('is `debark-stage`', () => {
+      expect(Signals.DEBARK_STAGE)
+        .to.equal('debark-stage')
+    })
+  })
+
+  describe('`Signals.CONFIRM_STAGE`', () => {
+    it('is a string', () => {
+      expect(Signals.CONFIRM_STAGE)
+        .to.be.a('string')
+    })
+
+    it('is `confirm-stage`', () => {
+      expect(Signals.CONFIRM_STAGE)
+        .to.equal('confirm-stage')
+    })
+  })
+
+  describe('`Signals.EMBARK_PATTERN`', () => {
+    it('is a string', () => {
+      expect(Signals.EMBARK_PATTERN)
+        .to.be.a('string')
+    })
+
+    it('is `/:embark`', () => {
+      expect(Signals.EMBARK_PATTERN)
+        .to.equal('/:embark')
+    })
+  })
+
+  describe('`Signals.DEBARK_PATTERN`', () => {
+    it('is a string', () => {
+      expect(Signals.DEBARK_PATTERN)
+        .to.be.a('string')
+    })
+
+    it('is `/:debark`', () => {
+      expect(Signals.DEBARK_PATTERN)
+        .to.equal('/:debark')
+    })
+  })
+
+  describe('`Signals.CONFIRM_PATTERN`', () => {
+    it('is a string', () => {
+      expect(Signals.CONFIRM_PATTERN)
+        .to.be.a('string')
+    })
+
+    it('is `/:confirm`', () => {
+      expect(Signals.CONFIRM_PATTERN)
+        .to.equal('/:confirm')
     })
   })
 
@@ -173,102 +269,6 @@ describe('shinkansen-signals/signals', () => {
     it('is `REMAIN_OMEGA`', () => {
       expect(Signals.REMAIN_OMEGA)
         .to.equal('REMAIN_OMEGA')
-    })
-  })
-
-  describe('`Signals.ALPHA_PATTERN`', () => {
-    it('is a string', () => {
-      expect(Signals.ALPHA_PATTERN)
-        .to.be.a('string')
-    })
-
-    it('is `/:alpha`', () => {
-      expect(Signals.ALPHA_PATTERN)
-        .to.equal('/:alpha')
-    })
-  })
-
-  describe('`Signals.OMEGA_PATTERN`', () => {
-    it('is a string', () => {
-      expect(Signals.OMEGA_PATTERN)
-        .to.be.a('string')
-    })
-
-    it('is `/:alpha/:omega`', () => {
-      expect(Signals.OMEGA_PATTERN)
-        .to.equal('/:alpha/:omega')
-    })
-  })
-
-  describe('`Signals.EMBARK_STAGE`', () => {
-    it('is a string', () => {
-      expect(Signals.EMBARK_STAGE)
-        .to.be.a('string')
-    })
-
-    it('is `embark-stage`', () => {
-      expect(Signals.EMBARK_STAGE)
-        .to.equal('embark-stage')
-    })
-  })
-
-  describe('`Signals.DEBARK_STAGE`', () => {
-    it('is a string', () => {
-      expect(Signals.DEBARK_STAGE)
-        .to.be.a('string')
-    })
-
-    it('is `debark-stage`', () => {
-      expect(Signals.DEBARK_STAGE)
-        .to.equal('debark-stage')
-    })
-  })
-
-  describe('`Signals.CONFIRMATION_STAGE`', () => {
-    it('is a string', () => {
-      expect(Signals.CONFIRMATION_STAGE)
-        .to.be.a('string')
-    })
-
-    it('is `confirmation-stage`', () => {
-      expect(Signals.CONFIRMATION_STAGE)
-        .to.equal('confirmation-stage')
-    })
-  })
-
-  describe('`Signals.EMBARK_PATTERN`', () => {
-    it('is a string', () => {
-      expect(Signals.EMBARK_PATTERN)
-        .to.be.a('string')
-    })
-
-    it('is `/:embark`', () => {
-      expect(Signals.EMBARK_PATTERN)
-        .to.equal('/:embark')
-    })
-  })
-
-  describe('`Signals.DEBARK_PATTERN`', () => {
-    it('is a string', () => {
-      expect(Signals.DEBARK_PATTERN)
-        .to.be.a('string')
-    })
-
-    it('is `/:debark`', () => {
-      expect(Signals.DEBARK_PATTERN)
-        .to.equal('/:debark')
-    })
-  })
-
-  describe('`Signals.CONFIRMATION_PATTERN`', () => {
-    it('is a string', () => {
-      expect(Signals.CONFIRMATION_PATTERN)
-        .to.be.a('string')
-    })
-
-    it('is `/:confirmation`', () => {
-      expect(Signals.CONFIRMATION_PATTERN)
-        .to.equal('/:confirmation')
     })
   })
 
@@ -492,7 +492,22 @@ describe('shinkansen-signals/signals', () => {
         EMBARK: 'MOCK EMBARK',
         DEBARK: 'MOCK DEBARK',
 
+        CONFIRM: 'MOCK CONFIRM',
+
         INDEX: 'MOCK INDEX',
+
+        EMBARK_STAGE: 'MOCK EMBARK_STAGE',
+        DEBARK_STAGE: 'MOCK DEBARK_STAGE',
+
+        CONFIRM_STAGE: 'MOCK CONFIRM_STAGE',
+
+        ALPHA_PATTERN: 'MOCK ALPHA_PATTERN',
+        OMEGA_PATTERN: 'MOCK OMEGA_PATTERN',
+
+        EMBARK_PATTERN: 'MOCK EMBARK_PATTERN',
+        DEBARK_PATTERN: 'MOCK DEBARK_PATTERN',
+
+        CONFIRM_PATTERN: 'MOCK CONFIRM_PATTERN',
 
         ENTER_ALPHA: 'MOCK ENTER_ALPHA',
         LEAVE_ALPHA: 'MOCK LEAVE_ALPHA',
@@ -505,15 +520,6 @@ describe('shinkansen-signals/signals', () => {
 
         CHANGE_OMEGA: 'MOCK CHANGE_OMEGA',
         REMAIN_OMEGA: 'MOCK REMAIN_OMEGA',
-
-        ALPHA_PATTERN: 'MOCK ALPHA_PATTERN',
-        OMEGA_PATTERN: 'MOCK OMEGA_PATTERN',
-
-        EMBARK_STAGE: 'MOCK EMBARK_STAGE',
-        DEBARK_STAGE: 'MOCK DEBARK_STAGE',
-
-        EMBARK_PATTERN: 'MOCK EMBARK_PATTERN',
-        DEBARK_PATTERN: 'MOCK DEBARK_PATTERN',
 
         ENTER_ALPHA_ENTER_OMEGA: 'MOCK ENTER_ALPHA_ENTER_OMEGA',
         LEAVE_ALPHA_LEAVE_OMEGA: 'MOCK LEAVE_ALPHA_LEAVE_OMEGA',
@@ -589,6 +595,18 @@ describe('shinkansen-signals/signals', () => {
       })
     })
 
+    describe('`Signals.CONFIRM`', () => {
+      it('is a string', () => {
+        expect(Signals.CONFIRM)
+          .to.be.a('string')
+      })
+
+      it('is `MOCK CONFIRM`', () => {
+        expect(Signals.CONFIRM)
+          .to.equal('MOCK CONFIRM')
+      })
+    })
+
     describe('`Signals.INDEX`', () => {
       it('is a string', () => {
         expect(Signals.INDEX)
@@ -598,6 +616,90 @@ describe('shinkansen-signals/signals', () => {
       it('is `MOCK INDEX`', () => {
         expect(Signals.INDEX)
           .to.equal('MOCK INDEX')
+      })
+    })
+
+    describe('`Signals.EMBARK_STAGE`', () => {
+      it('is a string', () => {
+        expect(Signals.EMBARK_STAGE)
+          .to.be.a('string')
+      })
+
+      it('is `MOCK EMBARK_STAGE`', () => {
+        expect(Signals.EMBARK_STAGE)
+          .to.equal('MOCK EMBARK_STAGE')
+      })
+    })
+
+    describe('`Signals.DEBARK_STAGE`', () => {
+      it('is a string', () => {
+        expect(Signals.DEBARK_STAGE)
+          .to.be.a('string')
+      })
+
+      it('is `MOCK DEBARK_STAGE`', () => {
+        expect(Signals.DEBARK_STAGE)
+          .to.equal('MOCK DEBARK_STAGE')
+      })
+    })
+
+    describe('`Signals.ALPHA_PATTERN`', () => {
+      it('is a string', () => {
+        expect(Signals.ALPHA_PATTERN)
+          .to.be.a('string')
+      })
+
+      it('is `MOCK ALPHA_PATTERN`', () => {
+        expect(Signals.ALPHA_PATTERN)
+          .to.equal('MOCK ALPHA_PATTERN')
+      })
+    })
+
+    describe('`Signals.OMEGA_PATTERN`', () => {
+      it('is a string', () => {
+        expect(Signals.OMEGA_PATTERN)
+          .to.be.a('string')
+      })
+
+      it('is `MOCK OMEGA_PATTERN`', () => {
+        expect(Signals.OMEGA_PATTERN)
+          .to.equal('MOCK OMEGA_PATTERN')
+      })
+    })
+
+    describe('`Signals.EMBARK_PATTERN`', () => {
+      it('is a string', () => {
+        expect(Signals.EMBARK_PATTERN)
+          .to.be.a('string')
+      })
+
+      it('is `MOCK EMBARK_PATTERN`', () => {
+        expect(Signals.EMBARK_PATTERN)
+          .to.equal('MOCK EMBARK_PATTERN')
+      })
+    })
+
+    describe('`Signals.DEBARK_PATTERN`', () => {
+      it('is a string', () => {
+        expect(Signals.DEBARK_PATTERN)
+          .to.be.a('string')
+      })
+
+      it('is `MOCK DEBARK_PATTERN`', () => {
+        expect(Signals.DEBARK_PATTERN)
+          .to.equal('MOCK DEBARK_PATTERN')
+      })
+    })
+
+    describe('`Signals.CONFIRM_PATTERN`', () => {
+      it('is a string', () => {
+        expect(Signals.CONFIRM_PATTERN)
+          .to.be.a('string')
+      })
+
+      it('is `MOCK CONFIRM_PATTERN`', () => {
+        expect(Signals.CONFIRM_PATTERN)
+          .to.equal('MOCK CONFIRM_PATTERN')
       })
     })
 
@@ -694,78 +796,6 @@ describe('shinkansen-signals/signals', () => {
       it('is `MOCK REMAIN_OMEGA`', () => {
         expect(Signals.REMAIN_OMEGA)
           .to.equal('MOCK REMAIN_OMEGA')
-      })
-    })
-
-    describe('`Signals.ALPHA_PATTERN`', () => {
-      it('is a string', () => {
-        expect(Signals.ALPHA_PATTERN)
-          .to.be.a('string')
-      })
-
-      it('is `MOCK ALPHA_PATTERN`', () => {
-        expect(Signals.ALPHA_PATTERN)
-          .to.equal('MOCK ALPHA_PATTERN')
-      })
-    })
-
-    describe('`Signals.OMEGA_PATTERN`', () => {
-      it('is a string', () => {
-        expect(Signals.OMEGA_PATTERN)
-          .to.be.a('string')
-      })
-
-      it('is `MOCK OMEGA_PATTERN`', () => {
-        expect(Signals.OMEGA_PATTERN)
-          .to.equal('MOCK OMEGA_PATTERN')
-      })
-    })
-
-    describe('`Signals.EMBARK_STAGE`', () => {
-      it('is a string', () => {
-        expect(Signals.EMBARK_STAGE)
-          .to.be.a('string')
-      })
-
-      it('is `MOCK EMBARK_STAGE`', () => {
-        expect(Signals.EMBARK_STAGE)
-          .to.equal('MOCK EMBARK_STAGE')
-      })
-    })
-
-    describe('`Signals.DEBARK_STAGE`', () => {
-      it('is a string', () => {
-        expect(Signals.DEBARK_STAGE)
-          .to.be.a('string')
-      })
-
-      it('is `MOCK DEBARK_STAGE`', () => {
-        expect(Signals.DEBARK_STAGE)
-          .to.equal('MOCK DEBARK_STAGE')
-      })
-    })
-
-    describe('`Signals.EMBARK_PATTERN`', () => {
-      it('is a string', () => {
-        expect(Signals.EMBARK_PATTERN)
-          .to.be.a('string')
-      })
-
-      it('is `MOCK EMBARK_PATTERN`', () => {
-        expect(Signals.EMBARK_PATTERN)
-          .to.equal('MOCK EMBARK_PATTERN')
-      })
-    })
-
-    describe('`Signals.DEBARK_PATTERN`', () => {
-      it('is a string', () => {
-        expect(Signals.DEBARK_PATTERN)
-          .to.be.a('string')
-      })
-
-      it('is `MOCK DEBARK_PATTERN`', () => {
-        expect(Signals.DEBARK_PATTERN)
-          .to.equal('MOCK DEBARK_PATTERN')
       })
     })
 
