@@ -153,10 +153,6 @@ export default class Signals {
     return signals.get('COMPLETE')
   }
 
-  static get PENDING () {
-    return signals.get('PENDING')
-  }
-
   static raise (values = {}) {
     Reflect
       .ownKeys(values)
