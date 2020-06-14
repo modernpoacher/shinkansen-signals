@@ -75,6 +75,5 @@ export default new Map(Object.entries({
   SUCCESS: 1,
   IN_PROGRESS: 3,
   NO_DECISION: 4,
-  COMPLETE: 5,
-  PENDING: 6
+  COMPLETE: 5
 }))

@@ -464,18 +464,6 @@ describe('shinkansen-signals/signals', () => {
     })
   })
 
-  describe('`Signals.PENDING`', () => {
-    it('is a number', () => {
-      expect(Signals.PENDING)
-        .to.be.a('number')
-    })
-
-    it('is 6', () => {
-      expect(Signals.PENDING)
-        .to.equal(6)
-    })
-  })
-
   describe('`Signals.raise`', () => {
     it('is a function', () => {
       expect(Signals.raise)
@@ -542,8 +530,7 @@ describe('shinkansen-signals/signals', () => {
         SUCCESS: 101,
         IN_PROGRESS: 103,
         NO_DECISION: 104,
-        COMPLETE: 105,
-        PENDING: 106
+        COMPLETE: 105
       })
     })
 
@@ -988,18 +975,6 @@ describe('shinkansen-signals/signals', () => {
       it('is 105', () => {
         expect(Signals.COMPLETE)
           .to.equal(105)
-      })
-    })
-
-    describe('`Signals.PENDING`', () => {
-      it('is a number', () => {
-        expect(Signals.PENDING)
-          .to.be.a('number')
-      })
-
-      it('is 106', () => {
-        expect(Signals.PENDING)
-          .to.equal(106)
       })
     })
   })
