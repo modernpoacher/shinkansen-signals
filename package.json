@@ -1,6 +1,6 @@
 {
   "name": "shinkansen-signals",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Shinkansen Signals",
   "main": "./index.js",
   "keywords": [
