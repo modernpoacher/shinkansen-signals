@@ -440,14 +440,14 @@ describe('shinkansen-signals/signals', () => {
     })
   })
 
-  describe('`Signals.NO_DECISION`', () => {
+  describe('`Signals.UNKNOWN`', () => {
     it('is a number', () => {
-      expect(Signals.NO_DECISION)
+      expect(Signals.UNKNOWN)
         .to.be.a('number')
     })
 
     it('is 4', () => {
-      expect(Signals.NO_DECISION)
+      expect(Signals.UNKNOWN)
         .to.equal(4)
     })
   })
@@ -529,7 +529,7 @@ describe('shinkansen-signals/signals', () => {
         FAILURE: 100,
         SUCCESS: 101,
         IN_PROGRESS: 103,
-        NO_DECISION: 104,
+        UNKNOWN: 104,
         COMPLETE: 105
       })
     })
@@ -954,14 +954,14 @@ describe('shinkansen-signals/signals', () => {
       })
     })
 
-    describe('`Signals.NO_DECISION`', () => {
+    describe('`Signals.UNKNOWN`', () => {
       it('is a number', () => {
-        expect(Signals.NO_DECISION)
+        expect(Signals.UNKNOWN)
           .to.be.a('number')
       })
 
       it('is 104', () => {
-        expect(Signals.NO_DECISION)
+        expect(Signals.UNKNOWN)
           .to.equal(104)
       })
     })

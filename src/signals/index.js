@@ -145,8 +145,8 @@ export default class Signals {
     return signals.get('IN_PROGRESS')
   }
 
-  static get NO_DECISION () {
-    return signals.get('NO_DECISION')
+  static get UNKNOWN () {
+    return signals.get('UNKNOWN')
   }
 
   static get COMPLETE () {
