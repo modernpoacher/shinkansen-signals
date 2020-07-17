@@ -8,7 +8,7 @@ import {
 } from 'shinkansen-signals'
 ```
 
-*Signals* exposes constants for *Zashiki* and other *Shinkansen* packages.
+*Signals* exposes constants for *Zashiki Karakuri* and other *Shinkansen* packages.
 
 ```javascript
 export class Signals {
