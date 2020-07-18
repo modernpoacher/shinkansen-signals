@@ -1,4 +1,4 @@
-## @modernpoacher/shinkansen-signals
+## shinkansen-signals
 
 # Shinkansen Signals
 
