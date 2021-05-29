@@ -13,29 +13,32 @@ export default {
    *  ALPHA_STAGE: 'alpha-stage',
    *  OMEGA_STAGE: 'omega-stage',
    *
-   *  ALPHA_PATTERN: ':alpha',
-   *  OMEGA_PATTERN: ':omega',
+   *  ALPHA_PATTERN: '/:alpha',
+   *  OMEGA_PATTERN: '/:alpha/:omega',
    *
-   *  ALPHA_ROUTE: '/:alpha',
-   *  OMEGA_ROUTE: '/:alpha/:omega',
+   *  ALPHA_ROUTE: '/alpha-stage',
+   *  OMEGA_ROUTE: '/alpha-stage/omega-stage',
    *
    *  EMBARK_STAGE: 'embark-stage',
    *  DEBARK_STAGE: 'debark-stage',
    *
-   *  EMBARK_PATTERN: ':embark',
-   *  DEBARK_PATTERN: ':debark',
+   *  EMBARK_PATTERN: '/:embark',
+   *  DEBARK_PATTERN: '/:debark',
    *
-   *  EMBARK_ROUTE: '/:embark',
-   *  DEBARK_ROUTE: '/:debark',
+   *  EMBARK_ROUTE: '/embark-stage',
+   *  DEBARK_ROUTE: '/debark-stage',
    */
 
-  ALPHA_PATTERN: '/:alpha',
-  OMEGA_PATTERN: '/:alpha/:omega',
+  ALPHA_STAGE: 'alpha-stage',
+  OMEGA_STAGE: 'omega-stage',
 
   EMBARK_STAGE: 'embark-stage',
   DEBARK_STAGE: 'debark-stage',
 
   CONFIRM_STAGE: 'confirm-stage',
+
+  ALPHA_PATTERN: '/:alpha',
+  OMEGA_PATTERN: '/:alpha/:omega',
 
   EMBARK_PATTERN: '/:embark',
   DEBARK_PATTERN: '/:debark',
