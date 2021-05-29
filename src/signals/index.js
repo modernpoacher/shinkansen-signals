@@ -1,6 +1,9 @@
 import debug from 'debug'
 
-import yargsParser from 'yargs-parser'
+import yargs from 'yargs'
+import {
+  hideBin
+} from 'yargs/helpers'
 
 import signals from './signals'
 
@@ -17,7 +20,7 @@ const filter = ([key, value]) => Reflect.has(signals, key)
 const reduce = (accumulator, [key, value]) => ({ ...accumulator, [key]: value })
 
 const SIGNALS = (
-  Object.entries(yargsParser(argv.slice(2)))
+  Object.entries(yargs(hideBin(argv)))
     .filter(filter)
     .reduce(reduce, {})
 )
