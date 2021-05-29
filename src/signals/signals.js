@@ -1,4 +1,4 @@
-export default new Map(Object.entries({
+export default {
   ALPHA: 'alpha',
   OMEGA: 'omega',
 
@@ -76,4 +76,4 @@ export default new Map(Object.entries({
   IN_PROGRESS: 3,
   UNKNOWN: 4,
   COMPLETE: 5
-}))
+}
