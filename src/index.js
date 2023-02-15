@@ -1,1 +1,1 @@
-export Signals from './signals'
+export { default as Signals } from './signals'
