@@ -1,6 +1,6 @@
 import debug from 'debug'
 
-import signals from './signals'
+import signals from './signals.mjs'
 
 const log = debug('shinkansen-signals')
 

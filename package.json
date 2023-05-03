@@ -2,6 +2,7 @@
   "name": "shinkansen-signals",
   "version": "1.1.2",
   "description": "Shinkansen Signals",
+  "type": "module",
   "keywords": [
     "Shinkansen",
     "Signals",
@@ -9,7 +10,7 @@
     "Zashiki",
     "Karakuri"
   ],
-  "main": "./index.js",
+  "main": "./src/index.cjs",
   "author": "Jonathan Perry for Modern Poacher Limited <modernpoacher@modernpoacher.com>",
   "license": "MIT",
   "engines": {
@@ -20,29 +21,22 @@
     "url": "git@github.com/modernpoacher/shinkansen-signals.git"
   },
   "scripts": {
-    "prepublishOnly": "cross-env NODE_ENV=production npm run build",
-    "prebuild": "npm run clean",
-    "build": "cross-env DEBUG=shinkansen-signals npm run babel",
-    "build:watch": "npm run babel:watch",
-    "clean": "rimraf lib",
-    "babel": "babel src -d lib",
-    "babel:watch": "npm run babel -- -w",
-    "lint": "eslint .",
+    "prelint": "npm run nvm",
+    "lint": "eslint . --ext .mjs --ext .cjs",
     "lint:fix": "npm run lint -- --fix",
-    "test": "cross-env NODE_ENV=test mocha -r @babel/register test --recursive",
-    "pre-commit": "npm run lint && npm test && npm run build && git add lib"
+    "pretest": "npm run nvm",
+    "test": "cross-env NODE_ENV=test mocha test --recursive",
+    "nvm": "bash nvm.sh"
   },
   "dependencies": {
     "debug": "^4.3.4"
   },
   "devDependencies": {
-    "@babel/cli": "^7.21.5",
     "@babel/core": "^7.21.8",
     "@babel/eslint-parser": "^7.21.8",
     "@babel/plugin-proposal-export-default-from": "^7.18.10",
     "@babel/preset-env": "^7.21.5",
     "@babel/register": "^7.21.0",
-    "babel-loader": "^9.1.2",
     "babel-plugin-module-resolver": "^5.0.0",
     "chai": "^4.3.7",
     "core-js": "^3.30.1",
@@ -56,5 +50,15 @@
     "husky": "^8.0.3",
     "mocha": "^10.2.0",
     "rimraf": "^5.0.0"
+  },
+  "imports": {
+    "#signals": "./src/signals/index.mjs"
+  },
+  "exports": {
+    ".": {
+      "require": "./src/index.cjs",
+      "import": "./src/index.mjs"
+    },
+    "./signals": "./src/signals/index.mjs"
   }
 }

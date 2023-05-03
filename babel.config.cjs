@@ -42,7 +42,7 @@ const plugins = [
   [
     'module-resolver', {
       alias: {
-        'shinkansen-signals': './src'
+        '#signals': './src/signals/index.mjs'
       }
     }
   ]
@@ -52,8 +52,6 @@ module.exports = (api) => {
   if (api) api.cache.using(env)
 
   return {
-    compact: true,
-    comments: false,
     presets,
     plugins
   }
