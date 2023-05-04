@@ -42,7 +42,7 @@ const plugins = [
   [
     'module-resolver', {
       alias: {
-        '#signals': './src/signals/index.mjs'
+        'shinkansen-signals': './src/index.cjs'
       }
     }
   ]

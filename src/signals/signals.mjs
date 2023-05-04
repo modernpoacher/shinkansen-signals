@@ -1,8 +1,8 @@
 import debug from 'debug'
 
-const log = debug('shinkansen-signals')
+const log = debug('shinkansen-signals/signals')
 
-log('`shinkansen-signals` is awake')
+log('`shinkansen` is awake')
 
 export const ALPHA = 'alpha'
 export const OMEGA = 'omega'

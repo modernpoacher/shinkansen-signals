@@ -1,9 +1,9 @@
 import { expect } from 'chai'
 
-import Signals from '#signals'
+import Signals from 'shinkansen-signals/signals'
 
-describe('#signals', () => {
-  it('is a function', () => {
+describe('shinkansen-signals/signals', () => {
+  it('is an object', () => {
     expect(Signals)
       .to.be.an('object')
   })

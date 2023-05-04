@@ -1,3 +1,13 @@
-require('@babel/register')
+require('@babel/register')({ ignore: [/node_modules/], configFile: require.resolve('../babel.config.cjs') })
 
-module.exports.Signals = require('#signals')
+const debug = require('debug')
+
+const log = debug('shinkansen-signals')
+
+log('`shinkansen` is awake')
+
+const {
+  default: Signals
+} = require('./signals/index.mjs')
+
+module.exports.Signals = Signals
