@@ -2,7 +2,6 @@
   "name": "shinkansen-signals",
   "version": "1.1.3",
   "description": "Shinkansen Signals",
-  "type": "module",
   "keywords": [
     "Shinkansen",
     "Signals",
@@ -11,6 +10,7 @@
     "Karakuri"
   ],
   "main": "./src/index.cjs",
+  "type": "module",
   "author": "Jonathan Perry for Modern Poacher Limited <modernpoacher@modernpoacher.com>",
   "license": "MIT",
   "engines": {
