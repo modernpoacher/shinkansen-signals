@@ -1,6 +1,6 @@
 const debug = require('debug')
 
-const log = debug('shinkansen:signals')
+const log = debug('shinkansen/signals')
 
 const {
   env: {
