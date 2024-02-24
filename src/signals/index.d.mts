@@ -3,7 +3,3 @@ declare module 'shinkansen-signals/signals' {
 
   export default signals
 }
-
-declare module 'shinkansen-signals' {
-  export { default as Signals } from 'shinkansen-signals/signals'
-}
