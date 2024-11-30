@@ -38,22 +38,11 @@ const presets = [
   ]
 ]
 
-const plugins = [
-  [
-    'module-resolver', {
-      alias: {
-        'shinkansen-signals': './src/index.cjs'
-      }
-    }
-  ]
-]
-
 module.exports = (api) => {
   if (api) api.cache.using(env)
 
   return {
     presets,
-    plugins,
     ignore: [
       /node_modules\/(?!shinkansen|@modernpoacher)/
     ]

@@ -1,11 +1,24 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
+    "module": "ESNext",
     "target": "ESNext",
-    "moduleResolution": "NodeNext",
+    "allowJs": true,
+    "checkJs": false,
+    "allowSyntheticDefaultImports": true,
     "noEmit": true,
     "strict": true,
     "isolatedModules": true,
-    "baseUrl": "."
-  }
+    "baseUrl": ".",
+    "paths": {
+      "#signals": [
+        "src/index.mjs"
+      ],
+      "#signals/signals": [
+        "src/signals/index.mjs"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
 }
