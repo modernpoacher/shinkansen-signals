@@ -1,5 +1,66 @@
 declare module '#signals/signals' {
-  interface signals {
+  export const ALPHA: string
+  export const OMEGA: string
+
+  export const EMBARK: string
+  export const DEBARK: string
+
+  export const CONFIRM: string
+
+  export const INDEX: string
+
+  export const ALPHA_STAGE: string
+  export const OMEGA_STAGE: string
+
+  export const EMBARK_STAGE: string
+  export const DEBARK_STAGE: string
+
+  export const CONFIRM_STAGE: string
+
+  export const ALPHA_PATTERN: string
+  export const OMEGA_PATTERN: string
+
+  export const EMBARK_PATTERN: string
+  export const DEBARK_PATTERN: string
+
+  export const CONFIRM_PATTERN: string
+
+  export const ENTER_ALPHA: string
+  export const LEAVE_ALPHA: string
+
+  export const CHANGE_ALPHA: string
+  export const REMAIN_ALPHA: string
+
+  export const ENTER_OMEGA: string
+  export const LEAVE_OMEGA: string
+
+  export const CHANGE_OMEGA: string
+  export const REMAIN_OMEGA: string
+
+  export const ENTER_ALPHA_ENTER_OMEGA: string
+  export const LEAVE_ALPHA_LEAVE_OMEGA: string
+
+  export const CHANGE_ALPHA_ENTER_OMEGA: string
+  export const CHANGE_ALPHA_LEAVE_OMEGA: string
+
+  export const REMAIN_ALPHA_ENTER_OMEGA: string
+  export const REMAIN_ALPHA_LEAVE_OMEGA: string
+
+  export const CHANGE_ALPHA_CHANGE_OMEGA: string
+  export const CHANGE_ALPHA_REMAIN_OMEGA: string
+
+  export const REMAIN_ALPHA_CHANGE_OMEGA: string
+  export const REMAIN_ALPHA_REMAIN_OMEGA: string
+
+  export const EXCEPTION: string
+
+  export const FAILURE: number
+  export const SUCCESS: number
+  export const IN_PROGRESS: number
+  export const UNKNOWN: number
+  export const COMPLETE: number
+
+  const signals: {
     ALPHA: string,
     OMEGA: string,
 
@@ -66,5 +127,5 @@ declare module '#signals/signals' {
 }
 
 declare module 'shinkansen-signals/signals' {
-  export type { default } from '#signals/signals'
+  export { default } from '#signals/signals'
 }
