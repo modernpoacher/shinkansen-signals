@@ -1,5 +1,5 @@
 declare module '#signals' {
-  export { default as Signals } from '#signals/signals'
+  export type { default as Signals } from '#signals/signals'
 }
 
 declare module 'shinkansen-signals' {
