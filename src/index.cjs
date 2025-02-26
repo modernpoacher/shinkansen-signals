@@ -11,7 +11,7 @@ const log = debug('shinkansen-signals')
 log('`shinkansen` is awake')
 
 const {
-  default: Signals
+  default: Signals // @ts-ignore
 } = require('./signals/index.mjs')
 
 module.exports.Signals = Signals
