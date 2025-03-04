@@ -11,7 +11,7 @@
   ],
   "main": "./src/index.mjs",
   "type": "module",
-  "types": "./src/index.d.mts",
+  "types": "./index.d.mts",
   "author": {
     "name": "Jonathan Perry for Modern Poacher Limited",
     "email": "modernpoacher@modernpoacher.com",
@@ -19,7 +19,7 @@
   },
   "license": "ISC",
   "engines": {
-    "node": ">=23.0.0"
+    "node": ">=22.11.0"
   },
   "repository": {
     "type": "git",
@@ -59,14 +59,19 @@
     "mocha": "^11.1.0"
   },
   "imports": {
-    "#signals": "./src/index.mjs",
-    "#signals/signals": "./src/signals/index.mjs"
+    "#signals": {
+      "require": "./src/index.cjs",
+      "import": "./src/index.mjs"
+    },
+    "#signals/signals": "./src/signals/index.mjs",
+    "#signals/signals/*": "./src/signals/*.mjs"
   },
   "exports": {
     ".": {
       "require": "./src/index.cjs",
       "import": "./src/index.mjs"
     },
-    "./signals": "./src/signals/index.mjs"
+    "./signals": "./src/signals/index.mjs",
+    "./signals/signals/*": "./src/signals/*.mjs"
   }
 }

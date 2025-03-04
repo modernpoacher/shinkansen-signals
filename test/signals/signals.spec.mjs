@@ -2,490 +2,534 @@ import {
   expect
 } from 'chai'
 
-import Signals from '#signals/signals'
+import {
+  INDEX,
 
-describe('#signals/signals', () => {
-  it('is an object', () => {
-    expect(Signals)
-      .to.be.an('object')
-  })
+  ALPHA,
+  OMEGA,
+  EMBARK,
+  DEBARK,
+  CONFIRM,
 
-  describe('`Signals.INDEX`', () => {
+  ALPHA_STAGE,
+  OMEGA_STAGE,
+  EMBARK_STAGE,
+  DEBARK_STAGE,
+  CONFIRM_STAGE,
+
+  ALPHA_PATTERN,
+  OMEGA_PATTERN,
+  EMBARK_PATTERN,
+  DEBARK_PATTERN,
+  CONFIRM_PATTERN,
+
+  ENTER_ALPHA,
+  LEAVE_ALPHA,
+  CHANGE_ALPHA,
+  REMAIN_ALPHA,
+
+  ENTER_OMEGA,
+  LEAVE_OMEGA,
+  CHANGE_OMEGA,
+  REMAIN_OMEGA,
+
+  ENTER_ALPHA_ENTER_OMEGA,
+  LEAVE_ALPHA_LEAVE_OMEGA,
+  CHANGE_ALPHA_ENTER_OMEGA,
+  CHANGE_ALPHA_LEAVE_OMEGA,
+  REMAIN_ALPHA_ENTER_OMEGA,
+  REMAIN_ALPHA_LEAVE_OMEGA,
+  CHANGE_ALPHA_CHANGE_OMEGA,
+  CHANGE_ALPHA_REMAIN_OMEGA,
+  REMAIN_ALPHA_CHANGE_OMEGA,
+  REMAIN_ALPHA_REMAIN_OMEGA,
+
+  EXCEPTION,
+
+  FAILURE,
+  SUCCESS,
+  IN_PROGRESS,
+  UNKNOWN,
+  COMPLETE
+} from '#signals/signals/signals'
+
+describe('#signals/signals/signals', () => {
+  describe('`INDEX`', () => {
     it('is a string', () => {
-      expect(Signals.INDEX)
+      expect(INDEX)
         .to.be.a('string')
     })
 
     it('is `INDEX`', () => {
-      expect(Signals.INDEX)
+      expect(INDEX)
         .to.equal('INDEX')
     })
   })
 
-  describe('`Signals.ALPHA`', () => {
+  describe('`ALPHA`', () => {
     it('is a string', () => {
-      expect(Signals.ALPHA)
+      expect(ALPHA)
         .to.be.a('string')
     })
 
     it('is `alpha`', () => {
-      expect(Signals.ALPHA)
+      expect(ALPHA)
         .to.equal('alpha')
     })
   })
 
-  describe('`Signals.OMEGA`', () => {
+  describe('`OMEGA`', () => {
     it('is a string', () => {
-      expect(Signals.OMEGA)
+      expect(OMEGA)
         .to.be.a('string')
     })
 
     it('is `omega`', () => {
-      expect(Signals.OMEGA)
+      expect(OMEGA)
         .to.equal('omega')
     })
   })
 
-  describe('`Signals.EMBARK`', () => {
+  describe('`EMBARK`', () => {
     it('is a string', () => {
-      expect(Signals.EMBARK)
+      expect(EMBARK)
         .to.be.a('string')
     })
 
     it('is `embark`', () => {
-      expect(Signals.EMBARK)
+      expect(EMBARK)
         .to.equal('embark')
     })
   })
 
-  describe('`Signals.DEBARK`', () => {
+  describe('`DEBARK`', () => {
     it('is a string', () => {
-      expect(Signals.DEBARK)
+      expect(DEBARK)
         .to.be.a('string')
     })
 
     it('is `debark`', () => {
-      expect(Signals.DEBARK)
+      expect(DEBARK)
         .to.equal('debark')
     })
   })
 
-  describe('`Signals.CONFIRM`', () => {
+  describe('`CONFIRM`', () => {
     it('is a string', () => {
-      expect(Signals.CONFIRM)
+      expect(CONFIRM)
         .to.be.a('string')
     })
 
     it('is `confirm`', () => {
-      expect(Signals.CONFIRM)
+      expect(CONFIRM)
         .to.equal('confirm')
     })
   })
 
-  describe('`Signals.ALPHA_STAGE`', () => {
+  describe('`ALPHA_STAGE`', () => {
     it('is a string', () => {
-      expect(Signals.ALPHA_STAGE)
+      expect(ALPHA_STAGE)
         .to.be.a('string')
     })
 
     it('is `alpha-stage`', () => {
-      expect(Signals.ALPHA_STAGE)
+      expect(ALPHA_STAGE)
         .to.equal('alpha-stage')
     })
   })
 
-  describe('`Signals.OMEGA_STAGE`', () => {
+  describe('`OMEGA_STAGE`', () => {
     it('is a string', () => {
-      expect(Signals.OMEGA_STAGE)
+      expect(OMEGA_STAGE)
         .to.be.a('string')
     })
 
     it('is `omega-stage`', () => {
-      expect(Signals.OMEGA_STAGE)
+      expect(OMEGA_STAGE)
         .to.equal('omega-stage')
     })
   })
 
-  describe('`Signals.EMBARK_STAGE`', () => {
+  describe('`EMBARK_STAGE`', () => {
     it('is a string', () => {
-      expect(Signals.EMBARK_STAGE)
+      expect(EMBARK_STAGE)
         .to.be.a('string')
     })
 
     it('is `embark-stage`', () => {
-      expect(Signals.EMBARK_STAGE)
+      expect(EMBARK_STAGE)
         .to.equal('embark-stage')
     })
   })
 
-  describe('`Signals.DEBARK_STAGE`', () => {
+  describe('`DEBARK_STAGE`', () => {
     it('is a string', () => {
-      expect(Signals.DEBARK_STAGE)
+      expect(DEBARK_STAGE)
         .to.be.a('string')
     })
 
     it('is `debark-stage`', () => {
-      expect(Signals.DEBARK_STAGE)
+      expect(DEBARK_STAGE)
         .to.equal('debark-stage')
     })
   })
 
-  describe('`Signals.CONFIRM_STAGE`', () => {
+  describe('`CONFIRM_STAGE`', () => {
     it('is a string', () => {
-      expect(Signals.CONFIRM_STAGE)
+      expect(CONFIRM_STAGE)
         .to.be.a('string')
     })
 
     it('is `confirm-stage`', () => {
-      expect(Signals.CONFIRM_STAGE)
+      expect(CONFIRM_STAGE)
         .to.equal('confirm-stage')
     })
   })
 
-  describe('`Signals.ALPHA_PATTERN`', () => {
+  describe('`ALPHA_PATTERN`', () => {
     it('is a string', () => {
-      expect(Signals.ALPHA_PATTERN)
+      expect(ALPHA_PATTERN)
         .to.be.a('string')
     })
 
     it('is `/:alpha`', () => {
-      expect(Signals.ALPHA_PATTERN)
+      expect(ALPHA_PATTERN)
         .to.equal('/:alpha')
     })
   })
 
-  describe('`Signals.OMEGA_PATTERN`', () => {
+  describe('`OMEGA_PATTERN`', () => {
     it('is a string', () => {
-      expect(Signals.OMEGA_PATTERN)
+      expect(OMEGA_PATTERN)
         .to.be.a('string')
     })
 
     it('is `/:alpha/:omega`', () => {
-      expect(Signals.OMEGA_PATTERN)
+      expect(OMEGA_PATTERN)
         .to.equal('/:alpha/:omega')
     })
   })
 
-  describe('`Signals.EMBARK_PATTERN`', () => {
+  describe('`EMBARK_PATTERN`', () => {
     it('is a string', () => {
-      expect(Signals.EMBARK_PATTERN)
+      expect(EMBARK_PATTERN)
         .to.be.a('string')
     })
 
     it('is `/:embark`', () => {
-      expect(Signals.EMBARK_PATTERN)
+      expect(EMBARK_PATTERN)
         .to.equal('/:embark')
     })
   })
 
-  describe('`Signals.DEBARK_PATTERN`', () => {
+  describe('`DEBARK_PATTERN`', () => {
     it('is a string', () => {
-      expect(Signals.DEBARK_PATTERN)
+      expect(DEBARK_PATTERN)
         .to.be.a('string')
     })
 
     it('is `/:debark`', () => {
-      expect(Signals.DEBARK_PATTERN)
+      expect(DEBARK_PATTERN)
         .to.equal('/:debark')
     })
   })
 
-  describe('`Signals.CONFIRM_PATTERN`', () => {
+  describe('`CONFIRM_PATTERN`', () => {
     it('is a string', () => {
-      expect(Signals.CONFIRM_PATTERN)
+      expect(CONFIRM_PATTERN)
         .to.be.a('string')
     })
 
     it('is `/:confirm`', () => {
-      expect(Signals.CONFIRM_PATTERN)
+      expect(CONFIRM_PATTERN)
         .to.equal('/:confirm')
     })
   })
 
-  describe('`Signals.ENTER_ALPHA`', () => {
+  describe('`ENTER_ALPHA`', () => {
     it('is a string', () => {
-      expect(Signals.ENTER_ALPHA)
+      expect(ENTER_ALPHA)
         .to.be.a('string')
     })
 
     it('is `ENTER_ALPHA`', () => {
-      expect(Signals.ENTER_ALPHA)
+      expect(ENTER_ALPHA)
         .to.equal('ENTER_ALPHA')
     })
   })
 
-  describe('`Signals.LEAVE_ALPHA`', () => {
+  describe('`LEAVE_ALPHA`', () => {
     it('is a string', () => {
-      expect(Signals.LEAVE_ALPHA)
+      expect(LEAVE_ALPHA)
         .to.be.a('string')
     })
 
     it('is `LEAVE_ALPHA`', () => {
-      expect(Signals.LEAVE_ALPHA)
+      expect(LEAVE_ALPHA)
         .to.equal('LEAVE_ALPHA')
     })
   })
 
-  describe('`Signals.CHANGE_ALPHA`', () => {
+  describe('`CHANGE_ALPHA`', () => {
     it('is a string', () => {
-      expect(Signals.CHANGE_ALPHA)
+      expect(CHANGE_ALPHA)
         .to.be.a('string')
     })
 
     it('is `CHANGE_ALPHA`', () => {
-      expect(Signals.CHANGE_ALPHA)
+      expect(CHANGE_ALPHA)
         .to.equal('CHANGE_ALPHA')
     })
   })
 
-  describe('`Signals.REMAIN_ALPHA`', () => {
+  describe('`REMAIN_ALPHA`', () => {
     it('is a string', () => {
-      expect(Signals.REMAIN_ALPHA)
+      expect(REMAIN_ALPHA)
         .to.be.a('string')
     })
 
     it('is `REMAIN_ALPHA`', () => {
-      expect(Signals.REMAIN_ALPHA)
+      expect(REMAIN_ALPHA)
         .to.equal('REMAIN_ALPHA')
     })
   })
 
-  describe('`Signals.ENTER_OMEGA`', () => {
+  describe('`ENTER_OMEGA`', () => {
     it('is a string', () => {
-      expect(Signals.ENTER_OMEGA)
+      expect(ENTER_OMEGA)
         .to.be.a('string')
     })
 
     it('is `ENTER_OMEGA`', () => {
-      expect(Signals.ENTER_OMEGA)
+      expect(ENTER_OMEGA)
         .to.equal('ENTER_OMEGA')
     })
   })
 
-  describe('`Signals.LEAVE_OMEGA`', () => {
+  describe('`LEAVE_OMEGA`', () => {
     it('is a string', () => {
-      expect(Signals.LEAVE_OMEGA)
+      expect(LEAVE_OMEGA)
         .to.be.a('string')
     })
 
     it('is `LEAVE_OMEGA`', () => {
-      expect(Signals.LEAVE_OMEGA)
+      expect(LEAVE_OMEGA)
         .to.equal('LEAVE_OMEGA')
     })
   })
 
-  describe('`Signals.CHANGE_OMEGA`', () => {
+  describe('`CHANGE_OMEGA`', () => {
     it('is a string', () => {
-      expect(Signals.CHANGE_OMEGA)
+      expect(CHANGE_OMEGA)
         .to.be.a('string')
     })
 
     it('is `CHANGE_OMEGA`', () => {
-      expect(Signals.CHANGE_OMEGA)
+      expect(CHANGE_OMEGA)
         .to.equal('CHANGE_OMEGA')
     })
   })
 
-  describe('`Signals.REMAIN_OMEGA`', () => {
+  describe('`REMAIN_OMEGA`', () => {
     it('is a string', () => {
-      expect(Signals.REMAIN_OMEGA)
+      expect(REMAIN_OMEGA)
         .to.be.a('string')
     })
 
     it('is `REMAIN_OMEGA`', () => {
-      expect(Signals.REMAIN_OMEGA)
+      expect(REMAIN_OMEGA)
         .to.equal('REMAIN_OMEGA')
     })
   })
 
-  describe('`Signals.ENTER_ALPHA_ENTER_OMEGA`', () => {
+  describe('`ENTER_ALPHA_ENTER_OMEGA`', () => {
     it('is a string', () => {
-      expect(Signals.ENTER_ALPHA_ENTER_OMEGA)
+      expect(ENTER_ALPHA_ENTER_OMEGA)
         .to.be.a('string')
     })
 
     it('is `ENTER_ALPHA_ENTER_OMEGA`', () => {
-      expect(Signals.ENTER_ALPHA_ENTER_OMEGA)
+      expect(ENTER_ALPHA_ENTER_OMEGA)
         .to.equal('ENTER_ALPHA_ENTER_OMEGA')
     })
   })
 
-  describe('`Signals.LEAVE_ALPHA_LEAVE_OMEGA`', () => {
+  describe('`LEAVE_ALPHA_LEAVE_OMEGA`', () => {
     it('is a string', () => {
-      expect(Signals.LEAVE_ALPHA_LEAVE_OMEGA)
+      expect(LEAVE_ALPHA_LEAVE_OMEGA)
         .to.be.a('string')
     })
 
     it('is `LEAVE_ALPHA_LEAVE_OMEGA`', () => {
-      expect(Signals.LEAVE_ALPHA_LEAVE_OMEGA)
+      expect(LEAVE_ALPHA_LEAVE_OMEGA)
         .to.equal('LEAVE_ALPHA_LEAVE_OMEGA')
     })
   })
 
-  describe('`Signals.CHANGE_ALPHA_ENTER_OMEGA`', () => {
+  describe('`CHANGE_ALPHA_ENTER_OMEGA`', () => {
     it('is a string', () => {
-      expect(Signals.CHANGE_ALPHA_ENTER_OMEGA)
+      expect(CHANGE_ALPHA_ENTER_OMEGA)
         .to.be.a('string')
     })
 
     it('is `CHANGE_ALPHA_ENTER_OMEGA`', () => {
-      expect(Signals.CHANGE_ALPHA_ENTER_OMEGA)
+      expect(CHANGE_ALPHA_ENTER_OMEGA)
         .to.equal('CHANGE_ALPHA_ENTER_OMEGA')
     })
   })
 
-  describe('`Signals.CHANGE_ALPHA_LEAVE_OMEGA`', () => {
+  describe('`CHANGE_ALPHA_LEAVE_OMEGA`', () => {
     it('is a string', () => {
-      expect(Signals.CHANGE_ALPHA_LEAVE_OMEGA)
+      expect(CHANGE_ALPHA_LEAVE_OMEGA)
         .to.be.a('string')
     })
 
     it('is `CHANGE_ALPHA_LEAVE_OMEGA`', () => {
-      expect(Signals.CHANGE_ALPHA_LEAVE_OMEGA)
+      expect(CHANGE_ALPHA_LEAVE_OMEGA)
         .to.equal('CHANGE_ALPHA_LEAVE_OMEGA')
     })
   })
 
-  describe('`Signals.REMAIN_ALPHA_ENTER_OMEGA`', () => {
+  describe('`REMAIN_ALPHA_ENTER_OMEGA`', () => {
     it('is a string', () => {
-      expect(Signals.REMAIN_ALPHA_ENTER_OMEGA)
+      expect(REMAIN_ALPHA_ENTER_OMEGA)
         .to.be.a('string')
     })
 
     it('is `REMAIN_ALPHA_ENTER_OMEGA`', () => {
-      expect(Signals.REMAIN_ALPHA_ENTER_OMEGA)
+      expect(REMAIN_ALPHA_ENTER_OMEGA)
         .to.equal('REMAIN_ALPHA_ENTER_OMEGA')
     })
   })
 
-  describe('`Signals.REMAIN_ALPHA_LEAVE_OMEGA`', () => {
+  describe('`REMAIN_ALPHA_LEAVE_OMEGA`', () => {
     it('is a string', () => {
-      expect(Signals.REMAIN_ALPHA_LEAVE_OMEGA)
+      expect(REMAIN_ALPHA_LEAVE_OMEGA)
         .to.be.a('string')
     })
 
     it('is `REMAIN_ALPHA_LEAVE_OMEGA`', () => {
-      expect(Signals.REMAIN_ALPHA_LEAVE_OMEGA)
+      expect(REMAIN_ALPHA_LEAVE_OMEGA)
         .to.equal('REMAIN_ALPHA_LEAVE_OMEGA')
     })
   })
 
-  describe('`Signals.CHANGE_ALPHA_CHANGE_OMEGA`', () => {
+  describe('`CHANGE_ALPHA_CHANGE_OMEGA`', () => {
     it('is a string', () => {
-      expect(Signals.CHANGE_ALPHA_CHANGE_OMEGA)
+      expect(CHANGE_ALPHA_CHANGE_OMEGA)
         .to.be.a('string')
     })
 
     it('is `CHANGE_ALPHA_CHANGE_OMEGA`', () => {
-      expect(Signals.CHANGE_ALPHA_CHANGE_OMEGA)
+      expect(CHANGE_ALPHA_CHANGE_OMEGA)
         .to.equal('CHANGE_ALPHA_CHANGE_OMEGA')
     })
   })
 
-  describe('`Signals.CHANGE_ALPHA_REMAIN_OMEGA`', () => {
+  describe('`CHANGE_ALPHA_REMAIN_OMEGA`', () => {
     it('is a string', () => {
-      expect(Signals.CHANGE_ALPHA_REMAIN_OMEGA)
+      expect(CHANGE_ALPHA_REMAIN_OMEGA)
         .to.be.a('string')
     })
 
     it('is `CHANGE_ALPHA_REMAIN_OMEGA`', () => {
-      expect(Signals.CHANGE_ALPHA_REMAIN_OMEGA)
+      expect(CHANGE_ALPHA_REMAIN_OMEGA)
         .to.equal('CHANGE_ALPHA_REMAIN_OMEGA')
     })
   })
 
-  describe('`Signals.REMAIN_ALPHA_CHANGE_OMEGA`', () => {
+  describe('`REMAIN_ALPHA_CHANGE_OMEGA`', () => {
     it('is a string', () => {
-      expect(Signals.REMAIN_ALPHA_CHANGE_OMEGA)
+      expect(REMAIN_ALPHA_CHANGE_OMEGA)
         .to.be.a('string')
     })
 
     it('is `REMAIN_ALPHA_CHANGE_OMEGA`', () => {
-      expect(Signals.REMAIN_ALPHA_CHANGE_OMEGA)
+      expect(REMAIN_ALPHA_CHANGE_OMEGA)
         .to.equal('REMAIN_ALPHA_CHANGE_OMEGA')
     })
   })
 
-  describe('`Signals.REMAIN_ALPHA_REMAIN_OMEGA`', () => {
+  describe('`REMAIN_ALPHA_REMAIN_OMEGA`', () => {
     it('is a string', () => {
-      expect(Signals.REMAIN_ALPHA_REMAIN_OMEGA)
+      expect(REMAIN_ALPHA_REMAIN_OMEGA)
         .to.be.a('string')
     })
 
     it('is a `REMAIN_ALPHA_REMAIN_OMEGA`', () => {
-      expect(Signals.REMAIN_ALPHA_REMAIN_OMEGA)
+      expect(REMAIN_ALPHA_REMAIN_OMEGA)
         .to.equal('REMAIN_ALPHA_REMAIN_OMEGA')
     })
   })
 
-  describe('`Signals.EXCEPTION`', () => {
+  describe('`EXCEPTION`', () => {
     it('is a string', () => {
-      expect(Signals.EXCEPTION)
+      expect(EXCEPTION)
         .to.be.a('string')
     })
 
     it('is a `EXCEPTION`', () => {
-      expect(Signals.EXCEPTION)
+      expect(EXCEPTION)
         .to.equal('EXCEPTION')
     })
   })
 
-  describe('`Signals.FAILURE`', () => {
+  describe('`FAILURE`', () => {
     it('is a number', () => {
-      expect(Signals.FAILURE)
+      expect(FAILURE)
         .to.be.a('number')
     })
 
     it('is 0', () => {
-      expect(Signals.FAILURE)
+      expect(FAILURE)
         .to.equal(0)
     })
   })
 
-  describe('`Signals.SUCCESS`', () => {
+  describe('`SUCCESS`', () => {
     it('is a number', () => {
-      expect(Signals.SUCCESS)
+      expect(SUCCESS)
         .to.be.a('number')
     })
 
     it('is 1', () => {
-      expect(Signals.SUCCESS)
+      expect(SUCCESS)
         .to.equal(1)
     })
   })
 
-  describe('`Signals.IN_PROGRESS`', () => {
+  describe('`IN_PROGRESS`', () => {
     it('is a number', () => {
-      expect(Signals.IN_PROGRESS)
+      expect(IN_PROGRESS)
         .to.be.a('number')
     })
 
     it('is 3', () => {
-      expect(Signals.IN_PROGRESS)
+      expect(IN_PROGRESS)
         .to.equal(3)
     })
   })
 
-  describe('`Signals.UNKNOWN`', () => {
+  describe('`UNKNOWN`', () => {
     it('is a number', () => {
-      expect(Signals.UNKNOWN)
+      expect(UNKNOWN)
         .to.be.a('number')
     })
 
     it('is 4', () => {
-      expect(Signals.UNKNOWN)
+      expect(UNKNOWN)
         .to.equal(4)
     })
   })
 
-  describe('`Signals.COMPLETE`', () => {
+  describe('`COMPLETE`', () => {
     it('is a number', () => {
-      expect(Signals.COMPLETE)
+      expect(COMPLETE)
         .to.be.a('number')
     })
 
     it('is 5', () => {
-      expect(Signals.COMPLETE)
+      expect(COMPLETE)
         .to.equal(5)
     })
   })

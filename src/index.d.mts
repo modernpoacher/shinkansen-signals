@@ -1,1 +1,3 @@
-export { default as Signals } from '#signals/signals'
+export {
+  default as Signals
+} from '#signals/signals'

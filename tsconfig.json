@@ -6,7 +6,24 @@
     "checkJs": true,
     "noEmit": true,
     "strict": true,
-    "isolatedModules": true,
-    "baseUrl": "."
-  }
+    "baseUrl": ".",
+    "paths": {
+      "#signals": [
+        "src/index.cjs",
+        "src/index.mjs"
+      ],
+      "#signals/signals": [
+        "src/signals/index.mjs"
+      ],
+      "#signals/signals/*": [
+        "src/signals/*.mjs"
+      ]
+    }
+  },
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "test/**/*"
+  ]
 }
