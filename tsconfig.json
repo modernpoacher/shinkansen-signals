@@ -6,17 +6,16 @@
     "checkJs": true,
     "noEmit": true,
     "strict": true,
-    "baseUrl": ".",
     "paths": {
       "#signals": [
-        "src/index.cjs",
-        "src/index.mjs"
+        "./src/index.cjs",
+        "./src/index.mjs"
       ],
       "#signals/signals": [
-        "src/signals/index.mjs"
+        "./src/signals/index.mjs"
       ],
       "#signals/signals/*": [
-        "src/signals/*.mjs"
+        "./src/signals/*.mjs"
       ]
     }
   },
