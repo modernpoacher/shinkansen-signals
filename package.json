@@ -72,5 +72,8 @@
     },
     "./signals": "./src/signals/index.mjs",
     "./signals/signals/*": "./src/signals/*.mjs"
+  },
+  "allowScripts": {
+    "core-js@3.51.0": true
   }
 }
